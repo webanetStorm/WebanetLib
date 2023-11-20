@@ -1,9 +1,15 @@
 ﻿#include <iostream>
+#include "String.h"
 
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    setlocale( LC_ALL, "Russian" );
+
+    String str = "Matvey    Korshunov";
+    cout << str << endl;
+    str.RemoveExtraSpaces();
+    cout << str;
 }
