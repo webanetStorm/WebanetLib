@@ -1,15 +1,13 @@
 ﻿#include <iostream>
-#include "String.h"
+#include "func.h"
 
 
+using namespace webanet;
 using namespace std;
 
 int main()
 {
     setlocale( LC_ALL, "Russian" );
 
-    String str = "Matvey    Korshunov";
-    cout << str << endl;
-    str.RemoveExtraSpaces();
-    cout << str;
+    cout << RemoveExtraSpaces( "Matvey   Korshunov" );
 }
